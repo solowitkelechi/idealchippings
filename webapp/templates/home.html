@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ilo Solomon Solowitkelechi" />
+    <meta name="description" content="Official website for IdealChippings" />
+    <title>IdealChippings</title>
+    <link
+      rel="icon"
+      href="{% static 'img/logo.png' %}"
+      type="image/icon type"
+    />
+    <link rel="stylesheet" href="{% static 'css/chippings.css' %}" />
+    <script
+      type="text/javascript"
+      src="{% static 'js/chipping.js' %}"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="#sample">Samples</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero_section">
+      <div class="hero_text">
+        <h1>IdealChippings</h1>
+        <p>Reliable, Fast, Trustworthy.</p>
+        <p>
+          Supplier of Gravel,
+          <span class="nowrap">available in different sizes.</span>
+        </p>
+      </div>
+    </section>
+    <main class="main anime-container">
+      <article class="main__df fade-in" id="about">
+        <p>
+          IdealChippings is a solution for Nigerians who want to carry out
+          projects (buildings, roads, etc.) to get gravel for their project(s)
+          at a very affordable rate.
+        </p>
+      </article>
+      <article class="main__img1 fade-in">
+        <figure>
+          <img
+            src="{% static 'img/truck.jpg'%}"
+            width="8000px"
+            height="6000px"
+            alt="loaded truck"
+          />
+        </figure>
+      </article>
+      <article class="main__wu fade-in">
+        <p>
+          Whether Contractors, Engineers or simply an Individual, there is
+          always a product for you andwe are here to make sure you do not lack
+          materials required to complete your project.
+        </p>
+      </article>
+      <article class="main__img2 fade-in">
+        <figure>
+          <img
+            src="{% static 'img/loadingTruck.jpg' %}"
+            width="8000px"
+            height="6000px"
+            alt="truck loading"
+          />
+        </figure>
+      </article>
+      <article class="main__info fade-in">
+        <section>
+          <h2>Why buy from us?</h2>
+          <p>
+            We offer you good and quality materials at company's prices. The
+            best prices you can get.
+          </p>
+        </section>
+        <section>
+          <h2>Safe and Reliable.</h2>
+          <p>
+            Our delegates are sent along with the truck to ensure products are
+            delivered without tamper.
+          </p>
+        </section>
+        <section>
+          <h2>Truck availability.</h2>
+          <p>
+            With our wide network of trucks and drivers, we deliver at an
+            affordable rate.
+          </p>
+        </section>
+      </article>
+      <article class="main__sample sample-container" id="sample">
+        <figure>
+          <img
+            src="https://cdn.pixabay.com/photo/2021/11/29/21/15/dust-6833839_960_720.jpg"
+            alt="Dust"
+            width="960"
+            height="720"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://cdn.pixabay.com/photo/2021/11/29/21/15/tiny-6833836_960_720.jpg"
+            alt="Tiny"
+            width="960"
+            height="720"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://cdn.pixabay.com/photo/2021/11/29/21/15/half-inch-6833842_960_720.jpg"
+            alt="half-inch"
+            width="960"
+            height="720"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://cdn.pixabay.com/photo/2021/11/29/21/15/stones-6833845_960_720.jpg"
+            alt=""
+            width="960"
+            height="720"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://cdn.pixabay.com/photo/2021/11/29/21/15/material-6833837_960_720.jpg"
+            alt=""
+            width="960"
+            height="720"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://cdn.pixabay.com/photo/2021/11/29/21/15/five-6833840_960_720.jpg"
+            alt=""
+            width="960"
+            height="720"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://cdn.pixabay.com/photo/2021/11/29/21/15/material-6833843_960_720.jpg"
+            alt=""
+            width="960"
+            height="720"
+          />
+        </figure>
+      </article>
+      <article class="main__contact contact fade-in" id="contact">
+        <h3 class="contact__h3">Contact</h3>
+        <ul class="contact__ul">
+          <li><b>Email:</b> IdealChippings@gmail.com</li>
+          <li><b>Mobile No:</b> 09061269637</li>
+          <li><b>Email:</b> Sirbianchi@gmail.com</li>
+          <li><b>Mobile No:</b> 09061269637</li>
+          <li><b>Email:</b> Solowitkelechi@gmail.com</li>
+          <li><b>Mobile No:</b> 08147962388</li>
+        </ul>
+      </article>
+      <article class="main__location location fade-in">
+        <h3 class="location__h3">Locations</h3>
+        <ul class="location__ul">
+          <li>Abia</li>
+          <li>Imo</li>
+          <li>Anambra</li>
+          <li>Rivers</li>
+        </ul>
+      </article>
+    </main>
+    <footer>
+      <div>
+        <span>IDEALCHIPPINGS &trade;</span>
+        <span>&copy; Copyright {{year}}</span>
+      </div>
+    </footer>
+  </body>
+</html>
