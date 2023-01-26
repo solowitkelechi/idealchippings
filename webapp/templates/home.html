@@ -7,6 +7,9 @@
     <meta name="author" content="Ilo Solomon Solowitkelechi" />
     <meta name="description" content="Official website for IdealChippings" />
     <title>IdealChippings</title>
+    <link rel="preload" href="{% static 'css/chippings.css' %}" as="style" />
+    <link rel="preload" href="{% static 'js/chippings.js' %}" as="script" />
+    <link rel="preload" href="{% static 'img/hero.jpg' %}" as="image" />
     <link
       rel="icon"
       href="{% static 'img/logo.png' %}"
@@ -29,7 +32,7 @@
         </ul>
       </nav>
     </header>
-    <section class="hero_section">
+    <section class="hero_section" style='background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0, 0.5)), url("{% static 'img/hero.jpg' %}"); height: 100vh;'>
       <div class="hero_text">
         <h1>IdealChippings</h1>
         <p>Reliable, Fast, Trustworthy.</p>
