@@ -278,8 +278,6 @@ main .main__sample{
     overflow-x: scroll;
     gap: 1em;
     padding: 1.5em;
-    background-color: rgba(32, 44, 48, 0.89);
-    border-radius: 5px;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
 }
