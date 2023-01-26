@@ -91,10 +91,21 @@ body::-webkit-scrollbar{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
+}
+
+@supports ( -webkit-touch-callout : none) {
+    .hero-section {
+        background-attachment:scroll
+    }
+}
+
+@supports not ( -webkit-touch-callout : none) {
+    .hero-section {
+        background-attachment: fixed;
+    }
 }
 
 .hero_text{
