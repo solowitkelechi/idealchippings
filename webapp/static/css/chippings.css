@@ -86,10 +86,10 @@ body::-webkit-scrollbar{
 .hero_section{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0, 0.5)), url("../img/hero.jpg");
     align-self: center;
     height: 100vh;
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     align-items: center;
@@ -99,27 +99,33 @@ body::-webkit-scrollbar{
 
 .hero_text{
     padding: 15px;
-    padding-top: 10px;
+    padding-top: 5px;
     color: rgb(219, 215, 215);
     font-size: 1.2rem;
-    animation: hero_text_animation 2s linear 1s forwards;
+    opacity: 0;
+    animation: hero_text_animation 2s linear 2s forwards;
 }
 
 @keyframes hero_text_animation {
     0%{
         transform: translateX(3000px);
+        opacity: 0;
     }
     20%{
         transform: translateX(1000px);
+        opacity: 0.2;
     }
     40%{
         transform: translateX(600px);
+        opacity: 0.8;
     }
     80%{
         transform: translateX(250px);
+        opacity: 0.9;
     }
     100%{
         transform: translateX(0px);
+        opacity: 1;
     }
     
 }
